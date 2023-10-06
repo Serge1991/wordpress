@@ -5,7 +5,7 @@ resource "aws_instance" "wordpress" {
   vpc_security_group_ids      = [var.vpc_sg]
   key_name                    = var.key_name
   associate_public_ip_address = true
-  user_data                   = file("~/Desktop/terrafrom/wordpress_project/ec2/script.tpl")
+  #user_data                   = file("~/Desktop/terrafrom/wordpress_project/ec2/script.tpl")
 
   tags = {
     Name = "wordpress-ec2"

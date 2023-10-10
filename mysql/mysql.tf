@@ -19,6 +19,6 @@ resource "aws_db_instance" "mysql" {
   db_subnet_group_name = aws_db_subnet_group.subnet-gr.name
 
   tags = {
-    Name = "wordpress"
+    Name = var.name_tag
   }
 }

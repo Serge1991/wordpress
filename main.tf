@@ -63,4 +63,5 @@ module "mysql" {
   subnet_id              = module.network.private_subnet_id_1
   subnet_id_2            = module.network.private_subnet_id_2
   vpc_security_group_ids = module.rds_sg.rgs_sg
+  name_tag               = "wordpress"
 }
